@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 class Books extends Component {
 
   render() {
-
+    console.log("Rendering Books")
     let books = this.props.books.map(book => <li key={book.id}>{book.title} by {book.authorName}</li>);
 
     return (
